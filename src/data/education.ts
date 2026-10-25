@@ -9,8 +9,8 @@ export const education: EducationItem[] = [
       en: "Information Systems Engineering",
     },
     institution: "Universidad Nacional Autónoma de Nicaragua, León (UNAN-León)",
-    start: 2018,
-    end: 2023,
+    start: 2014,
+    end: 2019,
     status: { es: "Título obtenido", en: "Degree completed" },
   },
 ];

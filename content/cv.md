@@ -35,4 +35,4 @@ Capacitación del personal en el uso del sistema de control de calidad desarroll
 Tecnologías: SQL Server, Visual Basic
 Educación
 Ingeniería en Sistemas de Información · Universidad Nacional Autónoma de Nicaragua, León (UNAN-León)
-2018 – 2023 · Título obtenido
+2014 – 2019 · Título obtenido
