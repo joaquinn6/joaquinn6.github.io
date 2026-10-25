@@ -15,7 +15,7 @@ const label = computed(() =>
 
 <template>
   <BaseButton
-    v-tooltip="label"
+    v-tooltip:bottom="label"
     variant="ghost"
     size="sm"
     :aria-label="label"

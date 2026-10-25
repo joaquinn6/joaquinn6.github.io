@@ -45,4 +45,25 @@ describe("App", () => {
     expect(wrapper.find('a[href="/cv/cv-en.pdf"]').exists()).toBe(true);
     wrapper.unmount();
   });
+
+  it("al hacer scroll marca la sección activa sin errores de render", async () => {
+    const errors: unknown[] = [];
+    const wrapper = mount(App, {
+      global: {
+        plugins: [i18n],
+        config: { errorHandler: (error) => errors.push(error) },
+      },
+      attachTo: document.body,
+    });
+
+    // En jsdom todas las secciones miden 0 px, así que la última queda activa.
+    window.dispatchEvent(new Event("scroll"));
+    await new Promise((resolve) => setTimeout(resolve, 50));
+
+    expect(wrapper.find('[aria-current="true"]').attributes("href")).toBe(
+      "#contact",
+    );
+    expect(errors).toEqual([]);
+    wrapper.unmount();
+  });
 });
