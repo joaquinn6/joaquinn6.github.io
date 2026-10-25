@@ -1,0 +1,73 @@
+name: Portafolio en GitHub Pages
+
+on:
+  # Se despliega con cada push a master...
+  push:
+    branches: [master]
+  # ...o manualmente desde la pestaña Actions.
+  workflow_dispatch:
+
+# Permisos mínimos: leer el paquete privado de la librería y publicar en Pages.
+permissions:
+  contents: read
+  packages: read
+  pages: write
+  id-token: write
+
+# Si llegan dos pushes seguidos, se cancela el despliegue anterior.
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Descargar el código
+        uses: actions/checkout@v4
+
+      - name: Instalar pnpm
+        uses: pnpm/action-setup@v4
+
+      - name: Instalar Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: pnpm
+
+      # La credencial se escribe en el .npmrc del usuario del runner, nunca en el repositorio.
+      # Requiere dar acceso de lectura a este repositorio desde la configuración del paquete.
+      - name: Autenticar GitHub Packages
+        run: echo "//npm.pkg.github.com/:_authToken=${NODE_AUTH_TOKEN}" >> ~/.npmrc
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Instalar dependencias
+        run: pnpm install --frozen-lockfile
+
+      - name: Validar
+        run: |
+          pnpm check:colors
+          pnpm check:contrast
+          pnpm format:check
+          pnpm test
+
+      # build ejecuta también check:types.
+      - name: Construir el sitio
+        run: pnpm build
+
+      - name: Subir el sitio como artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: dist
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Publicar en GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

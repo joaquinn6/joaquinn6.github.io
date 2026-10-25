@@ -1,0 +1,89 @@
+{
+  "meta": {
+    "title": "Joaquín Núñez Vega · Full Stack Developer",
+    "description": "Ingeniero de Software y Full Stack Developer con 7 años de experiencia en Python, FastAPI, Node.js y Vue 3."
+  },
+  "a11y": {
+    "skipToContent": "Saltar al contenido",
+    "mainNav": "Navegación principal",
+    "home": "Inicio",
+    "externalLink": "(se abre en una pestaña nueva)",
+    "openMenu": "Abrir el menú",
+    "closeMenu": "Cerrar el menú",
+    "profiles": "Perfiles"
+  },
+  "nav": {
+    "about": "Sobre mí",
+    "skills": "Habilidades",
+    "projects": "Proyectos",
+    "experience": "Experiencia",
+    "education": "Educación",
+    "contact": "Contacto"
+  },
+  "theme": {
+    "toLight": "Activar el modo claro",
+    "toDark": "Activar el modo oscuro"
+  },
+  "locale": {
+    "target": "EN",
+    "switchTo": "EN, cambiar el idioma a inglés"
+  },
+  "hero": {
+    "greeting": "Hola, soy",
+    "role": "Ingeniero de Software · Full Stack Developer",
+    "available": "Disponible para nuevas oportunidades",
+    "ctaProjects": "Ver proyectos",
+    "ctaContact": "Contactar",
+    "ctaCv": "Descargar CV",
+    "cvFormat": "PDF"
+  },
+  "about": {
+    "highlights": "Datos destacados"
+  },
+  "skills": {
+    "groups": {
+      "languages": "Lenguajes",
+      "backend": "Backend",
+      "frontend": "Frontend",
+      "databases": "Bases de datos",
+      "devops": "DevOps y nube",
+      "testing": "Testing",
+      "ai": "Desarrollo con IA",
+      "tools": "Herramientas",
+      "spoken": "Idiomas"
+    }
+  },
+  "projects": {
+    "demo": "Demo en vivo",
+    "code": "Código",
+    "details": "Ver detalles",
+    "detailsOf": "Ver detalles de {name}",
+    "problem": "El problema",
+    "solution": "La solución",
+    "highlights": "Lo más destacado",
+    "stack": "Tecnologías",
+    "close": "Cerrar los detalles del proyecto"
+  },
+  "experience": {
+    "present": "Actualidad",
+    "achievements": "Logros",
+    "showMore": "Ver {count} logros más",
+    "showLess": "Ver menos",
+    "stack": "Tecnologías"
+  },
+  "contact": {
+    "lead": "¿Tienes un proyecto o una vacante en mente? Escríbeme y te respondo lo antes posible.",
+    "email": "Correo",
+    "copyEmail": "Copiar el correo",
+    "copied": "Correo copiado",
+    "copiedDescription": "Ya puedes pegarlo en tu cliente de correo.",
+    "copyFailed": "No se pudo copiar el correo",
+    "copyFailedDescription": "Cópialo manualmente desde el enlace.",
+    "closeToast": "Cerrar la notificación"
+  },
+  "footer": {
+    "madeWith": "Hecho con Vue 3 y",
+    "library": "jnv-ui-components",
+    "source": "Código fuente"
+  }
+}

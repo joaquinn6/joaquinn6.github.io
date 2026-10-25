@@ -1,0 +1,133 @@
+/* Estilos globales del portafolio. Solo tokens: nunca colores literales. */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: calc(var(--pf-header-height) + var(--space-4));
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  min-width: 20rem;
+  min-height: 100vh;
+  background: var(--jnv-color-surface-page);
+  color: var(--jnv-color-text-body);
+  font-family: var(--font-family-base);
+  font-size: var(--font-size-md);
+  line-height: var(--line-height-base);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+img,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+::selection {
+  background: var(--jnv-color-brand-primary);
+  color: var(--jnv-color-text-on-primary);
+}
+
+:focus-visible {
+  outline: var(--focus-outline-width) solid var(--jnv-color-focus-ring);
+  outline-offset: var(--focus-outline-offset);
+}
+
+/* Contenedor centrado con márgenes laterales seguros desde 360 px. */
+.pf-container {
+  width: 100%;
+  max-width: var(--pf-content-max-width);
+  margin-inline: auto;
+  padding-inline: var(--pf-gutter);
+}
+
+@media (min-width: 48rem) {
+  :root {
+    --pf-gutter: var(--space-8);
+  }
+}
+
+/* Etiqueta monoespaciada que acompaña a los títulos de sección. */
+.pf-eyebrow {
+  font-family: var(--pf-font-mono);
+  font-size: var(--font-size-sm);
+  color: var(--jnv-color-brand-primary);
+  letter-spacing: 0.02em;
+}
+
+/* Enlace con icono y texto alineados. */
+.pf-icon-link {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+}
+
+/* Lista sin viñetas ni márgenes. */
+.pf-plain-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/* Aparición al hacer scroll: la directiva v-reveal solo añade la clase si puede animar. */
+.pf-reveal {
+  opacity: 0;
+  transform: translateY(var(--pf-reveal-distance));
+  transition:
+    opacity var(--pf-reveal-duration) ease,
+    transform var(--pf-reveal-duration) ease;
+}
+
+.pf-reveal--visible {
+  opacity: 1;
+  transform: none;
+}
+
+/* Solo para lectores de pantalla. */
+.pf-visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+/* Transición breve al cambiar de tema; useTheme añade y retira la clase. */
+.pf-theme-switching,
+.pf-theme-switching *,
+.pf-theme-switching *::before,
+.pf-theme-switching *::after {
+  transition:
+    background-color var(--pf-theme-transition-duration) ease,
+    border-color var(--pf-theme-transition-duration) ease,
+    color var(--pf-theme-transition-duration) ease,
+    fill var(--pf-theme-transition-duration) ease !important;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

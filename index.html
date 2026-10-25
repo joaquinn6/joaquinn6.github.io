@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Joaquín Núñez Vega · Full Stack Developer</title>
+    <meta
+      name="description"
+      content="Ingeniero de Software y Full Stack Developer con 7 años de experiencia en Python, FastAPI, Node.js y Vue 3."
+    />
+    <meta name="color-scheme" content="dark light" />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <!--
+      Aplica el tema y el idioma guardados antes del primer pintado para evitar el parpadeo.
+      Debe coincidir con las claves de src/composables/useTheme.ts y useLocale.ts.
+    -->
+    <script>
+      (function () {
+        var root = document.documentElement;
+        var theme, locale;
+        try {
+          theme = localStorage.getItem("pf-theme");
+          locale = localStorage.getItem("pf-locale");
+        } catch (error) {}
+        if (theme !== "light" && theme !== "dark") {
+          theme = matchMedia("(prefers-color-scheme: light)").matches
+            ? "light"
+            : "dark";
+        }
+        root.dataset.theme = theme;
+        if (locale === "es" || locale === "en") root.lang = locale;
+      })();
+    </script>
+  </head>
+  <body>
+    <div id="app"></div>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>

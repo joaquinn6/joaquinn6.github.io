@@ -1,0 +1,77 @@
+import type { ExperienceItem } from "./types";
+
+// Fuente: content/cv.md, sección "Experiencia". Del más reciente al más antiguo.
+export const experience: ExperienceItem[] = [
+  {
+    id: "hotaka-ikhodi",
+    company: "Hotaka iKhodi",
+    role: { es: "Full Stack Developer", en: "Full Stack Developer" },
+    start: "2020-09",
+    end: "2026-10",
+    featured: 4,
+    achievements: {
+      es: [
+        "Responsable de proyectos con 1 a 2 desarrolladores a mi cargo: asignación de tareas, orientación técnica y revisión de código en cada pull request para asegurar su calidad y cumplimiento de requisitos solicitados.",
+        "Diseño, desarrollo y mantenimiento de microservicios y APIs REST con Python (FastAPI) y Node.js, junto con el modelado de colecciones en MongoDB y tablas en PostgreSQL para un almacenamiento y consulta de datos eficientes.",
+        "Implementación de una arquitectura de microfrontends con Vue 3, Vite y Module Federation: una aplicación contenedora y dos microfrontends independientes, cada uno con su propio estado en Pinia.",
+        "Introduje en el equipo el desarrollo asistido por IA con Claude Code y Codex, basado en requerimientos documentados en Markdown y archivos AGENTS.md que mantienen la arquitectura del proyecto. Junto con la librería de componentes, esto redujo el arranque de nuevos proyectos de 1 o 2 meses a un máximo de 2 semanas.",
+        "Desarrollo de un portal de devoluciones de envíos integrado en Shopify mediante iframe, con comunicación entre la aplicación y la tienda a través de postMessage.",
+        "Creación, publicación y mantenimiento de paquetes npm de componentes UI, tanto privados para la empresa como una librería propia de componentes Vue 3, con versionado semántico, changelog y publicación mediante pipelines. Permitieron construir pantallas nuevas reutilizando componentes en lugar de desarrollarlas desde cero.",
+        "Desarrollo de aplicaciones web responsivas en Vue.js para visualizar, crear, editar y eliminar datos.",
+        "Integración de servicios externos como Google Maps, APIs de mensajería y Azure Blob Storage para la carga y descarga de archivos.",
+        "Creación de plantillas HTML con Jinja2 y CSS Flexbox para facturas, etiquetas y correos electrónicos.",
+        "Uso de contenedores Docker, ejecución de tareas en pods de Kubernetes, ejecución de pipelines en Bitbucket y pruebas automatizadas con Pytest y Vitest.",
+      ],
+      en: [
+        "Led projects with 1 to 2 developers under my supervision: task assignment, technical guidance and code review on every pull request to ensure quality and compliance with the requested requirements.",
+        "Designed, built and maintained microservices and REST APIs with Python (FastAPI) and Node.js, along with modeling MongoDB collections and PostgreSQL tables for efficient data storage and querying.",
+        "Implemented a microfrontend architecture with Vue 3, Vite and Module Federation: a host application and two independent microfrontends, each with its own Pinia state.",
+        "Introduced AI-assisted development to the team with Claude Code and Codex, based on requirements documented in Markdown and AGENTS.md files that preserve the project architecture. Together with the component library, this cut the kickoff of new projects from 1–2 months to 2 weeks at most.",
+        "Built a shipment returns portal embedded in Shopify through an iframe, with communication between the app and the store via postMessage.",
+        "Created, published and maintained npm packages of UI components, both private ones for the company and my own Vue 3 component library, with semantic versioning, changelogs and pipeline-based publishing. They made it possible to build new screens by reusing components instead of developing them from scratch.",
+        "Built responsive web applications in Vue.js to view, create, edit and delete data.",
+        "Integrated external services such as Google Maps, messaging APIs and Azure Blob Storage for file uploads and downloads.",
+        "Created HTML templates with Jinja2 and CSS Flexbox for invoices, labels and emails.",
+        "Used Docker containers, ran tasks in Kubernetes pods, ran pipelines in Bitbucket and wrote automated tests with Pytest and Vitest.",
+      ],
+    },
+    stack: [
+      "Python",
+      "FastAPI",
+      "Node.js",
+      "Vue.js 3",
+      "Pinia",
+      "Vite",
+      "React",
+      "MongoDB",
+      "PostgreSQL",
+      "Docker",
+      "Kubernetes",
+      "Azure",
+      "Shopify",
+      "Git",
+      "Bitbucket",
+      "Jira",
+    ],
+  },
+  {
+    id: "comasa",
+    company: "COMASA",
+    role: { es: "Desarrollador Junior", en: "Junior Developer" },
+    start: "2019-09",
+    end: "2020-09",
+    achievements: {
+      es: [
+        "Diseño e implementación de tablas, triggers y vistas en SQL Server para garantizar la integridad de los datos y su consulta eficiente.",
+        "Desarrollo de aplicaciones de escritorio en Visual Basic para el control de calidad del producto, que agilizaron los procesos de inspección y redujeron los errores.",
+        "Capacitación del personal en el uso del sistema de control de calidad desarrollado.",
+      ],
+      en: [
+        "Designed and implemented tables, triggers and views in SQL Server to ensure data integrity and efficient querying.",
+        "Built Visual Basic desktop applications for product quality control, which streamlined inspection processes and reduced errors.",
+        "Trained staff on the quality control system I developed.",
+      ],
+    },
+    stack: ["SQL Server", "Visual Basic"],
+  },
+];

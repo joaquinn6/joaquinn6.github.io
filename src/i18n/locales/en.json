@@ -1,0 +1,89 @@
+{
+  "meta": {
+    "title": "Joaquín Núñez Vega · Full Stack Developer",
+    "description": "Software Engineer and Full Stack Developer with 7 years of experience in Python, FastAPI, Node.js and Vue 3."
+  },
+  "a11y": {
+    "skipToContent": "Skip to content",
+    "mainNav": "Main navigation",
+    "home": "Home",
+    "externalLink": "(opens in a new tab)",
+    "openMenu": "Open menu",
+    "closeMenu": "Close menu",
+    "profiles": "Profiles"
+  },
+  "nav": {
+    "about": "About",
+    "skills": "Skills",
+    "projects": "Projects",
+    "experience": "Experience",
+    "education": "Education",
+    "contact": "Contact"
+  },
+  "theme": {
+    "toLight": "Switch to light mode",
+    "toDark": "Switch to dark mode"
+  },
+  "locale": {
+    "target": "ES",
+    "switchTo": "ES, switch language to Spanish"
+  },
+  "hero": {
+    "greeting": "Hi, I'm",
+    "role": "Software Engineer · Full Stack Developer",
+    "available": "Open to new opportunities",
+    "ctaProjects": "View projects",
+    "ctaContact": "Get in touch",
+    "ctaCv": "Download CV",
+    "cvFormat": "PDF"
+  },
+  "about": {
+    "highlights": "Highlights"
+  },
+  "skills": {
+    "groups": {
+      "languages": "Languages",
+      "backend": "Backend",
+      "frontend": "Frontend",
+      "databases": "Databases",
+      "devops": "DevOps and cloud",
+      "testing": "Testing",
+      "ai": "AI-assisted development",
+      "tools": "Tools",
+      "spoken": "Spoken languages"
+    }
+  },
+  "projects": {
+    "demo": "Live demo",
+    "code": "Code",
+    "details": "View details",
+    "detailsOf": "View details of {name}",
+    "problem": "The problem",
+    "solution": "The solution",
+    "highlights": "Highlights",
+    "stack": "Tech stack",
+    "close": "Close project details"
+  },
+  "experience": {
+    "present": "Present",
+    "achievements": "Achievements",
+    "showMore": "Show {count} more achievements",
+    "showLess": "Show less",
+    "stack": "Tech stack"
+  },
+  "contact": {
+    "lead": "Have a project or a role in mind? Write to me and I'll get back to you as soon as possible.",
+    "email": "Email",
+    "copyEmail": "Copy email",
+    "copied": "Email copied",
+    "copiedDescription": "You can now paste it into your email client.",
+    "copyFailed": "Could not copy the email",
+    "copyFailedDescription": "Copy it manually from the link.",
+    "closeToast": "Close notification"
+  },
+  "footer": {
+    "madeWith": "Made with Vue 3 and",
+    "library": "jnv-ui-components",
+    "source": "Source code"
+  }
+}

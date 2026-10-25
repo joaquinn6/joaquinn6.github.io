@@ -1,0 +1,179 @@
+/*
+ * Tema del portafolio: paleta "Editorial cálido".
+ * Se importa después de los temas JNV, que actúan como respaldo de cualquier token no sobrescrito.
+ * Es el ÚNICO archivo del proyecto donde se permiten colores literales (ver AGENTS.md).
+ * El contraste de los pares principales se verifica con `pnpm check:contrast`.
+ */
+
+/* Tokens propios no cromáticos: compartidos por ambos modos. */
+:root {
+  --font-family-base:
+    "Inter Variable", Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", sans-serif;
+  --pf-font-mono:
+    "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  --pf-content-max-width: 72rem;
+  --pf-gutter: var(--space-4);
+  --pf-header-height: 4rem;
+  --pf-section-gap: 6rem;
+  --pf-reveal-distance: 1rem;
+  --pf-reveal-duration: 500ms;
+  --pf-theme-transition-duration: 300ms;
+}
+
+/* Oscuro (predeterminado). */
+:root {
+  color-scheme: dark;
+
+  /* Paleta privada. Los componentes nunca la consumen directamente. */
+  --pf-palette-ink-950: #0f0d0b;
+  --pf-palette-ink-900: #141210;
+  --pf-palette-ink-850: #1e1b18;
+  --pf-palette-ink-800: #2a2622;
+  --pf-palette-ink-700: #332e29;
+  --pf-palette-ink-600: #4a433c;
+  --pf-palette-sand-600: #5a5047;
+  --pf-palette-sand-300: #a89f94;
+  --pf-palette-sand-100: #ede6dd;
+  --pf-palette-sand-75: #e8dfd2;
+  --pf-palette-sand-50: #faf6f0;
+  --pf-palette-paper-50: #f4ede3;
+  --pf-palette-orange-950: #3b2312;
+  --pf-palette-orange-400: #fb923c;
+  --pf-palette-orange-300: #fdba74;
+  --pf-palette-teal-300: #5eead4;
+  --pf-palette-teal-200: #99f6e4;
+  --pf-palette-red-400: #f87171;
+  --pf-palette-red-300: #fca5a5;
+  --pf-palette-red-950: #3b1515;
+  --pf-palette-amber-300: #fcd34d;
+  --pf-palette-amber-950: #3a2c0f;
+  --pf-palette-green-400: #4ade80;
+  --pf-palette-green-950: #12301f;
+  --pf-palette-sky-400: #38bdf8;
+  --pf-palette-sky-950: #0f2a3a;
+
+  --jnv-color-brand-primary: var(--pf-palette-orange-400);
+  --jnv-color-brand-primary-hover: var(--pf-palette-orange-300);
+  --jnv-color-brand-secondary: var(--pf-palette-teal-300);
+  --jnv-color-brand-secondary-hover: var(--pf-palette-teal-200);
+  --jnv-color-surface-page: var(--pf-palette-ink-900);
+  --jnv-color-surface-subtle: var(--pf-palette-ink-850);
+  --jnv-color-surface-muted: var(--pf-palette-ink-800);
+  --jnv-color-surface-footer: var(--pf-palette-ink-950);
+  --jnv-color-surface-highlight: var(--pf-palette-orange-950);
+  --jnv-color-surface-inverse: var(--pf-palette-paper-50);
+  --jnv-color-surface-inverse-hover: var(--pf-palette-sand-75);
+  --jnv-color-text-heading: var(--pf-palette-sand-50);
+  --jnv-color-text-body: var(--pf-palette-sand-100);
+  --jnv-color-text-muted: var(--pf-palette-sand-300);
+  --jnv-color-text-inverse: var(--pf-palette-ink-900);
+  --jnv-color-text-inverse-muted: var(--pf-palette-sand-600);
+  --jnv-color-text-on-primary: var(--pf-palette-ink-900);
+  --jnv-color-border-default: var(--pf-palette-ink-700);
+  --jnv-color-border-strong: var(--pf-palette-ink-600);
+  --jnv-color-border-inverse: rgb(20 18 16 / 0.14);
+  --jnv-color-action-primary: var(--jnv-color-brand-primary);
+  --jnv-color-action-primary-hover: var(--jnv-color-brand-primary-hover);
+  --jnv-color-action-secondary: var(--jnv-color-brand-secondary);
+  --jnv-color-action-danger: var(--jnv-color-state-error);
+  --jnv-color-action-danger-hover: var(--pf-palette-red-300);
+  --jnv-color-focus-ring: var(--jnv-color-brand-primary);
+  --jnv-color-focus-shadow: rgb(251 146 60 / 0.28);
+  --jnv-color-state-error: var(--pf-palette-red-400);
+  --jnv-color-state-error-surface: var(--pf-palette-red-950);
+  --jnv-color-state-warning: var(--pf-palette-amber-300);
+  --jnv-color-state-success: var(--pf-palette-green-400);
+  --jnv-color-state-success-surface: var(--pf-palette-green-950);
+  --jnv-color-status-info-text: var(--pf-palette-sky-400);
+
+  --jnv-alert-warning-background: var(--pf-palette-amber-950);
+  --jnv-alert-info-background: var(--pf-palette-sky-950);
+  --jnv-badge-info-background: var(--pf-palette-sky-950);
+  --jnv-badge-warning-background: var(--pf-palette-amber-950);
+  --jnv-color-badge-progress: var(--pf-palette-amber-300);
+  --jnv-color-badge-progress-surface: var(--pf-palette-amber-950);
+  --jnv-overlay-background: var(--jnv-color-surface-subtle);
+  --jnv-dialog-backdrop-background: rgb(10 8 6 / 0.66);
+  --jnv-field-info-focus-shadow: rgb(251 146 60 / 0.2);
+  --jnv-color-signature-guide: var(--pf-palette-sand-300);
+  --jnv-color-signature-ink: var(--pf-palette-sand-50);
+}
+
+/* Claro: se activa con data-theme="light" en <html>. */
+:root[data-theme="light"] {
+  color-scheme: light;
+
+  --pf-palette-paper-50: #faf7f2;
+  --pf-palette-paper-100: #f1ebe1;
+  --pf-palette-paper-150: #efe7da;
+  --pf-palette-paper-200: #e8e0d3;
+  --pf-palette-paper-300: #ded4c5;
+  --pf-palette-paper-400: #c4b8a6;
+  --pf-palette-ink-900: #1c1814;
+  --pf-palette-ink-850: #1e1b18;
+  --pf-palette-ink-800: #2b2520;
+  --pf-palette-sand-600: #665c52;
+  --pf-palette-sand-300: #a89f94;
+  --pf-palette-sand-50: #faf6f0;
+  --pf-palette-orange-50: #fbe9da;
+  --pf-palette-orange-800: #9a3412;
+  --pf-palette-orange-900: #7c2d12;
+  --pf-palette-teal-700: #0f766e;
+  --pf-palette-teal-800: #115e59;
+  --pf-palette-red-700: #b91c1c;
+  --pf-palette-red-800: #991b1b;
+  --pf-palette-red-50: #fdecec;
+  --pf-palette-amber-800: #92400e;
+  --pf-palette-amber-50: #fdf3d8;
+  --pf-palette-green-800: #166534;
+  --pf-palette-green-50: #e9f7ef;
+  --pf-palette-sky-700: #0369a1;
+  --pf-palette-sky-50: #e6f3fa;
+
+  --jnv-color-brand-primary: var(--pf-palette-orange-800);
+  --jnv-color-brand-primary-hover: var(--pf-palette-orange-900);
+  --jnv-color-brand-secondary: var(--pf-palette-teal-700);
+  --jnv-color-brand-secondary-hover: var(--pf-palette-teal-800);
+  --jnv-color-surface-page: var(--pf-palette-paper-50);
+  --jnv-color-surface-subtle: var(--pf-palette-paper-100);
+  --jnv-color-surface-muted: var(--pf-palette-paper-200);
+  --jnv-color-surface-footer: var(--pf-palette-paper-150);
+  --jnv-color-surface-highlight: var(--pf-palette-orange-50);
+  --jnv-color-surface-inverse: var(--pf-palette-ink-850);
+  --jnv-color-surface-inverse-hover: rgb(255 255 255 / 0.06);
+  --jnv-color-text-heading: var(--pf-palette-ink-900);
+  --jnv-color-text-body: var(--pf-palette-ink-800);
+  --jnv-color-text-muted: var(--pf-palette-sand-600);
+  --jnv-color-text-inverse: var(--pf-palette-sand-50);
+  --jnv-color-text-inverse-muted: var(--pf-palette-sand-300);
+  --jnv-color-text-on-primary: #ffffff;
+  --jnv-color-border-default: var(--pf-palette-paper-300);
+  --jnv-color-border-strong: var(--pf-palette-paper-400);
+  --jnv-color-border-inverse: rgb(255 255 255 / 0.14);
+  --jnv-color-action-primary: var(--jnv-color-brand-primary);
+  --jnv-color-action-primary-hover: var(--jnv-color-brand-primary-hover);
+  --jnv-color-action-secondary: var(--jnv-color-brand-secondary);
+  --jnv-color-action-danger: var(--jnv-color-state-error);
+  --jnv-color-action-danger-hover: var(--pf-palette-red-800);
+  --jnv-color-focus-ring: var(--jnv-color-brand-primary);
+  --jnv-color-focus-shadow: rgb(154 52 18 / 0.2);
+  --jnv-color-state-error: var(--pf-palette-red-700);
+  --jnv-color-state-error-surface: var(--pf-palette-red-50);
+  --jnv-color-state-warning: var(--pf-palette-amber-800);
+  --jnv-color-state-success: var(--pf-palette-green-800);
+  --jnv-color-state-success-surface: var(--pf-palette-green-50);
+  --jnv-color-status-info-text: var(--pf-palette-sky-700);
+
+  --jnv-alert-warning-background: var(--pf-palette-amber-50);
+  --jnv-alert-info-background: var(--pf-palette-sky-50);
+  --jnv-badge-info-background: var(--pf-palette-sky-50);
+  --jnv-badge-warning-background: var(--pf-palette-amber-50);
+  --jnv-color-badge-progress: var(--pf-palette-amber-800);
+  --jnv-color-badge-progress-surface: var(--pf-palette-amber-50);
+  --jnv-overlay-background: var(--jnv-color-surface-page);
+  --jnv-dialog-backdrop-background: rgb(28 24 20 / 0.5);
+  --jnv-field-info-focus-shadow: rgb(154 52 18 / 0.18);
+  --jnv-color-signature-guide: var(--pf-palette-sand-600);
+  --jnv-color-signature-ink: var(--pf-palette-ink-900);
+}
