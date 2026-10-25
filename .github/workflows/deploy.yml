@@ -13,6 +13,8 @@ permissions:
   packages: read
   pages: write
   id-token: write
+  # deploy-pages v4+ lee el artifact por su id.
+  actions: read
 
 # Si llegan dos pushes seguidos, se cancela el despliegue anterior.
 concurrency:
@@ -24,13 +26,14 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Descargar el código
-        uses: actions/checkout@v4
+        uses: actions/checkout@v7
 
+      # Toma la versión de pnpm de packageManager en package.json (pnpm 12 requiere v6.1+).
       - name: Instalar pnpm
-        uses: pnpm/action-setup@v4
+        uses: pnpm/action-setup@v6
 
       - name: Instalar Node
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@v7
         with:
           node-version: 22
           cache: pnpm
@@ -41,6 +44,14 @@ jobs:
         run: echo "//npm.pkg.github.com/:_authToken=${NODE_AUTH_TOKEN}" >> ~/.npmrc
         env:
           NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      # Falla rápido y con un mensaje claro si el token no puede leer el paquete.
+      - name: Verificar acceso a la librería
+        run: |
+          if ! npm view @joaquinn6/jnv-ui-components version --registry=https://npm.pkg.github.com; then
+            echo "::error::GITHUB_TOKEN no puede leer @joaquinn6/jnv-ui-components. En la configuración del paquete, abre 'Manage Actions access' y da rol Read a este repositorio."
+            exit 1
+          fi
 
       - name: Instalar dependencias
         run: pnpm install --frozen-lockfile
@@ -57,7 +68,7 @@ jobs:
         run: pnpm build
 
       - name: Subir el sitio como artifact
-        uses: actions/upload-pages-artifact@v3
+        uses: actions/upload-pages-artifact@v5
         with:
           path: dist
 
@@ -70,4 +81,4 @@ jobs:
     steps:
       - name: Publicar en GitHub Pages
         id: deployment
-        uses: actions/deploy-pages@v4
+        uses: actions/deploy-pages@v5
