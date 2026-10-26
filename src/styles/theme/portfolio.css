@@ -5,12 +5,8 @@
  * El contraste de los pares principales se verifica con `pnpm check:contrast`.
  */
 
-/*
- * Tokens no cromáticos: compartidos por ambos modos. Incluye el selector claro porque el tema claro
- * de la librería redefine algunos de ellos (p. ej. el ancho del diálogo) con más especificidad.
- */
-:root,
-:root[data-theme="light"] {
+/* Tokens propios no cromáticos: compartidos por ambos modos. */
+:root {
   --font-family-base:
     "Inter Variable", Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont,
     "Segoe UI", sans-serif;
@@ -23,8 +19,14 @@
   --pf-reveal-distance: 1rem;
   --pf-reveal-duration: 500ms;
   --pf-theme-transition-duration: 300ms;
+}
 
-  /* BaseDialog usa el tamaño `sm` por defecto: el doble de su valor (28rem). */
+/*
+ * Ancho del diálogo: BaseDialog usa el tamaño `sm` por defecto; aquí, el doble de su valor (28rem).
+ * Incluye el selector claro porque el tema claro de la librería lo redefine con más especificidad.
+ */
+:root,
+:root[data-theme="light"] {
   --jnv-dialog-sm-width: 56rem;
 }
 
