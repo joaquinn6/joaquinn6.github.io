@@ -65,8 +65,8 @@ export const projects: Project[] = [
       en: "Full-stack app to track habits, set goals and see your progress.",
     },
     summary: {
-      es: "Proyecto personal de aprendizaje para dar el salto de Vue a React: un frontend en React que consume una API REST en FastAPI con MongoDB. Se puede explorar con un usuario de prueba.",
-      en: "Personal learning project to make the jump from Vue to React: a React frontend that consumes a REST API built with FastAPI and MongoDB. It can be explored with a test user.",
+      es: "Proyecto personal de aprendizaje para dar el salto de Vue a React: un frontend en React, diseñado mobile-first, que consume una API REST en FastAPI con MongoDB. Se puede explorar con un usuario de prueba.",
+      en: "Personal learning project to make the jump from Vue to React: a mobile-first React frontend that consumes a REST API built with FastAPI and MongoDB. It can be explored with a test user.",
     },
     problem: {
       es: "Llevaba trabajando con Vue desde 2020 y quería aprender React para abrirme a otras tecnologías. Además, necesitaba llevar el control de mis hábitos para autoanalizarme y mejorar día a día.",
@@ -81,7 +81,7 @@ export const projects: Project[] = [
         "Calendario interactivo con soporte para eventos y notas, y un tour de usuario que guía la pantalla.",
         "Estadísticas del progreso generadas con agregaciones de MongoDB.",
         "Autenticación con JWT usando python-jose, y contraseñas protegidas con passlib.",
-        "Diseño responsivo con Ant Design, modo claro y oscuro, e instalable en dispositivos móviles.",
+        "Construido mobile-first: pensado primero para usarse desde el celular y adaptado luego a pantallas grandes, con Ant Design, modo claro y oscuro, e instalable en dispositivos móviles.",
         "Estado global con Zustand y consumo de la API con axios.",
         "Frontend desplegado en Vercel y API en Render, con documentación Swagger.",
       ],
@@ -89,7 +89,7 @@ export const projects: Project[] = [
         "Interactive calendar with support for events and notes, plus a user tour that guides the screen.",
         "Progress statistics generated with MongoDB aggregations.",
         "JWT authentication using python-jose, with passwords secured by passlib.",
-        "Responsive design with Ant Design, light and dark mode, and installable on mobile devices.",
+        "Built mobile-first: designed first to be used from a phone and then adapted to larger screens, with Ant Design, light and dark mode, and installable on mobile devices.",
         "Global state with Zustand and API consumption with axios.",
         "Frontend deployed on Vercel and API on Render, with Swagger documentation.",
       ],
