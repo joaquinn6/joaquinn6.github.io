@@ -99,6 +99,7 @@ export const projects: Project[] = [
       "Vite",
       "Zustand",
       "Ant Design",
+      "Mobile-first",
       "FastAPI",
       "Pydantic",
       "MongoDB",
