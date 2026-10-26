@@ -20,11 +20,11 @@ export const profile: Profile = {
   about: {
     es: [
       "Ingeniero de Software con 7 años de experiencia en desarrollo full stack con Python, JavaScript y Vue.js. Diseño microservicios y APIs REST con FastAPI y Node.js, aplicaciones web y microfrontends con Vue 3 y Vite, e integraciones con plataformas como Shopify, Google Maps y Azure.",
-      "He estado a cargo de proyectos con otros desarrolladores bajo mi coordinación, e implementé en el equipo un flujo de desarrollo asistido por IA que redujo el tiempo de arranque de nuevos proyectos de 1 o 2 meses a un máximo de 2 semanas.",
+      "He estado a cargo de proyectos con otros desarrolladores bajo mi coordinación, e implementé en el equipo un flujo de desarrollo asistido por IA que redujo de 1 o 2 meses a un máximo de 2 semanas el tiempo para poner en producción un proyecto nuevo.",
     ],
     en: [
       "Software Engineer with 7 years of full stack experience with Python, JavaScript and Vue.js. I design microservices and REST APIs with FastAPI and Node.js, web applications and microfrontends with Vue 3 and Vite, and integrations with platforms such as Shopify, Google Maps and Azure.",
-      "I have led projects with other developers under my coordination, and introduced an AI-assisted development workflow to the team that cut the kickoff time of new projects from 1–2 months to 2 weeks at most.",
+      "I have led projects with other developers under my coordination, and introduced an AI-assisted development workflow to the team that cut the time to put a new project into production from 1–2 months to 2 weeks at most.",
     ],
   },
   highlights: [

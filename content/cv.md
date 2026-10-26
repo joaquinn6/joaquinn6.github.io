@@ -2,7 +2,7 @@ Joaquín Núñez Vega
 Ingeniero de Software · Full Stack Developer
 joaquin.software.e@gmail.com | linkedin.com/in/joaquin-n6 | github.com/joaquinn6 | Portafolio: [agregar enlace]
 Perfil
-Ingeniero de Software con 7 años de experiencia en desarrollo full stack con Python, JavaScript y Vue.js. Diseño microservicios y APIs REST con FastAPI y Node.js, aplicaciones web y microfrontends con Vue 3 y Vite, e integraciones con plataformas como Shopify, Google Maps y Azure. He estado a cargo de proyectos con otros desarrolladores bajo mi coordinación, e implementé en el equipo un flujo de desarrollo asistido por IA que redujo el tiempo de arranque de nuevos proyectos de 1 o 2 meses a un máximo de 2 semanas.
+Ingeniero de Software con 7 años de experiencia en desarrollo full stack con Python, JavaScript y Vue.js. Diseño microservicios y APIs REST con FastAPI y Node.js, aplicaciones web y microfrontends con Vue 3 y Vite, e integraciones con plataformas como Shopify, Google Maps y Azure. He estado a cargo de proyectos con otros desarrolladores bajo mi coordinación, e implementé en el equipo un flujo de desarrollo asistido por IA que redujo de 1 o 2 meses a un máximo de 2 semanas el tiempo para poner en producción un proyecto nuevo.
 Habilidades
 Lenguajes: Python, JavaScript, SQL
 Backend: FastAPI, Node.js, APIs REST, microservicios, Jinja2
