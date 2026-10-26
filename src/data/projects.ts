@@ -2,6 +2,7 @@ import type { Project } from "./types";
 
 // Para agregar un proyecto, añade un objeto a este arreglo; no hace falta tocar componentes.
 // Fuente de components-vue-3: su README y content/cv.md.
+// Fuente de habits: los README de joaquinn6/habits-app y joaquinn6/habits-api.
 export const projects: Project[] = [
   {
     slug: "components-vue-3",
@@ -50,6 +51,66 @@ export const projects: Project[] = [
     links: {
       repo: "https://github.com/joaquinn6/components-vue-3",
       demo: "https://joaquinn6.github.io/components-vue-3/",
+    },
+  },
+  {
+    slug: "habits",
+    name: {
+      es: "Control de hábitos",
+      en: "Habits control",
+    },
+    year: 2025,
+    tagline: {
+      es: "Aplicación full stack para registrar hábitos, fijar metas y ver tu progreso.",
+      en: "Full-stack app to track habits, set goals and see your progress.",
+    },
+    summary: {
+      es: "Proyecto personal de aprendizaje para dar el salto de Vue a React: un frontend en React que consume una API REST en FastAPI con MongoDB. Se puede explorar con un usuario de prueba.",
+      en: "Personal learning project to make the jump from Vue to React: a React frontend that consumes a REST API built with FastAPI and MongoDB. It can be explored with a test user.",
+    },
+    problem: {
+      es: "Llevaba trabajando con Vue desde 2020 y quería aprender React para abrirme a otras tecnologías. Además, necesitaba llevar el control de mis hábitos para autoanalizarme y mejorar día a día.",
+      en: "I had been working with Vue since 2020 and wanted to learn React to open myself up to other technologies. I also needed to keep track of my habits to self-analyze and improve day by day.",
+    },
+    solution: {
+      es: "Una aplicación con un frontend en React y una API RESTful en FastAPI. Los usuarios crean, editan y eliminan hábitos, les asignan metas, los registran en un calendario y consultan estadísticas de su progreso.",
+      en: "An app with a React frontend and a RESTful API built with FastAPI. Users create, edit and delete habits, assign them goals, log them on a calendar and check statistics on their progress.",
+    },
+    highlights: {
+      es: [
+        "Calendario interactivo con soporte para eventos y notas, y un tour de usuario que guía la pantalla.",
+        "Estadísticas del progreso generadas con agregaciones de MongoDB.",
+        "Autenticación con JWT usando python-jose, y contraseñas protegidas con passlib.",
+        "Diseño responsivo con Ant Design, modo claro y oscuro, e instalable en dispositivos móviles.",
+        "Estado global con Zustand y consumo de la API con axios.",
+        "Frontend desplegado en Vercel y API en Render, con documentación Swagger.",
+      ],
+      en: [
+        "Interactive calendar with support for events and notes, plus a user tour that guides the screen.",
+        "Progress statistics generated with MongoDB aggregations.",
+        "JWT authentication using python-jose, with passwords secured by passlib.",
+        "Responsive design with Ant Design, light and dark mode, and installable on mobile devices.",
+        "Global state with Zustand and API consumption with axios.",
+        "Frontend deployed on Vercel and API on Render, with Swagger documentation.",
+      ],
+    },
+    stack: [
+      "React",
+      "Vite",
+      "Zustand",
+      "Ant Design",
+      "FastAPI",
+      "Pydantic",
+      "MongoDB",
+      "JWT",
+      "Vercel",
+      "Render",
+    ],
+    links: {
+      repo: "https://github.com/joaquinn6/habits-app",
+      apiRepo: "https://github.com/joaquinn6/habits-api",
+      apiDocs: "https://habits-api-7wcr.onrender.com/docs",
+      demo: "https://habits-three-iota.vercel.app/",
     },
   },
 ];

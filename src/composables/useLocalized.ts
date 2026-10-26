@@ -10,5 +10,10 @@ export function useLocalized() {
     return value[locale.value];
   }
 
-  return { l, locale };
+  /** Resuelve un texto que puede ser fijo o traducido. */
+  function text(value: string | Localized): string {
+    return typeof value === "string" ? value : l(value);
+  }
+
+  return { l, text, locale };
 }

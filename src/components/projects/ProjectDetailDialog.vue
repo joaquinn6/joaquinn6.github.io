@@ -5,7 +5,7 @@ import {
   BaseText,
 } from "@joaquinn6/jnv-ui-components";
 
-import ExternalLink from "@/components/controls/ExternalLink.vue";
+import ProjectLinks from "@/components/projects/ProjectLinks.vue";
 import TechList from "@/components/projects/TechList.vue";
 import { useLocalized } from "@/composables/useLocalized";
 import type { Project } from "@/data/types";
@@ -13,13 +13,13 @@ import type { Project } from "@/data/types";
 defineProps<{ project: Project; open: boolean }>();
 const emit = defineEmits<{ close: [] }>();
 
-const { l } = useLocalized();
+const { l, text } = useLocalized();
 </script>
 
 <template>
   <BaseDialog
     :open="open"
-    :title="project.name"
+    :title="text(project.name)"
     :description="l(project.tagline)"
     :close-label="$t('projects.close')"
     @close="emit('close')"
@@ -63,20 +63,7 @@ const { l } = useLocalized();
     </div>
 
     <template #actions>
-      <ExternalLink
-        v-if="project.links.demo"
-        :href="project.links.demo"
-        icon="externalLink"
-      >
-        {{ $t("projects.demo") }}
-      </ExternalLink>
-      <ExternalLink
-        v-if="project.links.repo"
-        :href="project.links.repo"
-        icon="github"
-      >
-        {{ $t("projects.code") }}
-      </ExternalLink>
+      <ProjectLinks :links="project.links" />
     </template>
   </BaseDialog>
 </template>

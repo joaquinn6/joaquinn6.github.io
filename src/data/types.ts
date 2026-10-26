@@ -83,7 +83,8 @@ export interface ProjectImage {
 
 export interface Project {
   slug: string;
-  name: string;
+  /** Un nombre propio (igual en todos los idiomas) o un nombre traducido. */
+  name: string | Localized;
   year: number;
   tagline: Localized;
   summary: Localized;
@@ -93,6 +94,10 @@ export interface Project {
   stack: string[];
   links: {
     repo?: string;
+    /** Repositorio de la API, cuando el backend vive en un repositorio aparte. */
+    apiRepo?: string;
+    /** Documentación interactiva de la API (Swagger). */
+    apiDocs?: string;
     demo?: string;
   };
   image?: ProjectImage;
