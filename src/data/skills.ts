@@ -11,6 +11,8 @@ export const skills: SkillGroup[] = [
       { es: "APIs REST", en: "REST APIs" },
       { es: "Microservicios", en: "Microservices" },
       "Jinja2",
+      "pandas",
+      "NumPy",
     ],
   },
   {
@@ -27,6 +29,7 @@ export const skills: SkillGroup[] = [
       "HTML",
       "CSS",
       "Bootstrap",
+      "Chart.js",
     ],
   },
   { id: "databases", items: ["PostgreSQL", "MongoDB", "SQL Server"] },

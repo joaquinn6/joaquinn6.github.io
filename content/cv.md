@@ -5,8 +5,8 @@ Perfil
 Ingeniero de Software con 7 años de experiencia en desarrollo full stack con Python, JavaScript y Vue.js. Diseño microservicios y APIs REST con FastAPI y Node.js, aplicaciones web y microfrontends con Vue 3 y Vite, e integraciones con plataformas como Shopify, Google Maps y Azure. He estado a cargo de proyectos con otros desarrolladores bajo mi coordinación, e implementé en el equipo un flujo de desarrollo asistido por IA que redujo de 1 o 2 meses a un máximo de 2 semanas el tiempo para poner en producción un proyecto nuevo.
 Habilidades
 Lenguajes: Python, JavaScript, SQL
-Backend: FastAPI, Node.js, APIs REST, microservicios, Jinja2
-Frontend: Vue.js 3, Pinia, Vite, microfrontends (Module Federation), React, HTML, CSS, Bootstrap
+Backend: FastAPI, Node.js, APIs REST, microservicios, Jinja2, pandas, NumPy
+Frontend: Vue.js 3, Pinia, Vite, microfrontends (Module Federation), React, HTML, CSS, Bootstrap, Chart.js
 Bases de datos: PostgreSQL, MongoDB, SQL Server
 DevOps y nube: Docker, Kubernetes, Azure Blob Storage, Bitbucket Pipelines, GitHub Actions
 Testing: Pytest, Vitest
@@ -26,7 +26,7 @@ Desarrollo de aplicaciones web responsivas en Vue.js para visualizar, crear, edi
 Integración de servicios externos como Google Maps, APIs de mensajería y Azure Blob Storage para la carga y descarga de archivos.
 Creación de plantillas HTML con Jinja2 y CSS Flexbox para facturas, etiquetas y correos electrónicos.
 Uso de contenedores Docker, ejecución de tareas en pods de Kubernetes, ejecución de pipelines en Bitbucket y pruebas automatizadas con Pytest y Vitest.
-Tecnologías: Python, FastAPI, Node.js, Vue.js 3, Pinia, Vite, React, MongoDB, PostgreSQL, Docker, Kubernetes, Azure, Shopify, Git, Bitbucket, Jira
+Tecnologías: Python, FastAPI, pandas, NumPy, Node.js, Vue.js 3, Pinia, Vite, React, Chart.js, MongoDB, PostgreSQL, Docker, Kubernetes, Azure, Shopify, Git, Bitbucket, Jira
 COMASA · Desarrollador Junior
 Septiembre 2019 – Septiembre 2020
 Diseño e implementación de tablas, triggers y vistas en SQL Server para garantizar la integridad de los datos y su consulta eficiente.
