@@ -56,7 +56,18 @@ export const skills: SkillGroup[] = [
       },
     ],
   },
-  { id: "tools", items: ["Git", "GitHub", "Bitbucket", "Jira", "npm"] },
+  {
+    id: "tools",
+    items: [
+      "Git",
+      "GitHub",
+      "Bitbucket",
+      "Jira",
+      "npm",
+      "Postman",
+      "FileZilla",
+    ],
+  },
   {
     id: "spoken",
     items: [

@@ -11,7 +11,7 @@ Bases de datos: PostgreSQL, MongoDB, SQL Server
 DevOps y nube: Docker, Kubernetes, Azure Blob Storage, Bitbucket Pipelines, GitHub Actions
 Testing: Pytest, Vitest
 Desarrollo con IA: Claude Code, Codex, Cursor, servidores MCP (Chrome DevTools MCP)
-Herramientas: Git, GitHub, Bitbucket, Jira, npm
+Herramientas: Git, GitHub, Bitbucket, Jira, npm, Postman, FileZilla
 Idiomas: Español (nativo), Inglés (conversacional)
 Experiencia
 Hotaka iKhodi · Full Stack Developer
@@ -25,8 +25,9 @@ Introduje en el equipo el desarrollo asistido por IA con Claude Code y Codex, ba
 Desarrollo de aplicaciones web responsivas en Vue.js para visualizar, crear, editar y eliminar datos.
 Integración de servicios externos como Google Maps, APIs de mensajería y Azure Blob Storage para la carga y descarga de archivos.
 Creación de plantillas HTML con Jinja2 y CSS Flexbox para facturas, etiquetas y correos electrónicos.
+Generación de reportes en Excel con pandas.
 Uso de contenedores Docker, ejecución de tareas en pods de Kubernetes, ejecución de pipelines en Bitbucket y pruebas automatizadas con Pytest y Vitest.
-Tecnologías: Python, FastAPI, pandas, NumPy, Node.js, Vue.js 3, Pinia, Vite, React, Chart.js, MongoDB, PostgreSQL, Docker, Kubernetes, Azure, Shopify, Git, Bitbucket, Jira
+Tecnologías: Python, FastAPI, pandas, NumPy, Node.js, Vue.js 3, Pinia, Vite, React, Chart.js, MongoDB, PostgreSQL, Docker, Kubernetes, Azure, Shopify, Git, Bitbucket, Jira, Postman, FileZilla
 COMASA · Desarrollador Junior
 Septiembre 2019 – Septiembre 2020
 Diseño e implementación de tablas, triggers y vistas en SQL Server para garantizar la integridad de los datos y su consulta eficiente.

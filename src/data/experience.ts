@@ -20,6 +20,7 @@ export const experience: ExperienceItem[] = [
         "Desarrollo de aplicaciones web responsivas en Vue.js para visualizar, crear, editar y eliminar datos.",
         "Integración de servicios externos como Google Maps, APIs de mensajería y Azure Blob Storage para la carga y descarga de archivos.",
         "Creación de plantillas HTML con Jinja2 y CSS Flexbox para facturas, etiquetas y correos electrónicos.",
+        "Generación de reportes en Excel con pandas.",
         "Uso de contenedores Docker, ejecución de tareas en pods de Kubernetes, ejecución de pipelines en Bitbucket y pruebas automatizadas con Pytest y Vitest.",
       ],
       en: [
@@ -32,6 +33,7 @@ export const experience: ExperienceItem[] = [
         "Built responsive web applications in Vue.js to view, create, edit and delete data.",
         "Integrated external services such as Google Maps, messaging APIs and Azure Blob Storage for file uploads and downloads.",
         "Created HTML templates with Jinja2 and CSS Flexbox for invoices, labels and emails.",
+        "Generated Excel reports with pandas.",
         "Used Docker containers, ran tasks in Kubernetes pods, ran pipelines in Bitbucket and wrote automated tests with Pytest and Vitest.",
       ],
     },
@@ -55,6 +57,8 @@ export const experience: ExperienceItem[] = [
       "Git",
       "Bitbucket",
       "Jira",
+      "Postman",
+      "FileZilla",
     ],
   },
   {
